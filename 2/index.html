@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Кошик покупок</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+        <div class="add">
+            <input type="text" class="add-products" placeholder="Назва товару"> <button class="btn-add">Додати</button>
+        </div>
+        <div class="item">
+            <span class="name"><s>Помідори</s></span>
+            <div class="controls">     
+                <span class="quantity">2</span>    
+            </div>
+            <div class="controls">
+                <button class = "btn-bought" data-tooltip="Відмітити як куплене">Не куплено</button>
+            </div>
+        </div>
+        <div class="item">
+            <span class="name">Печиво</span>
+            <div class="controls">
+                <button class = "btn-minus" data-tooltip="Видалити">-</button>
+                <span class="quantity">2</span>
+                <button class = "btn-plus" data-tooltip="Додати">+</button>
+            </div>
+            <div class="controls">
+                <button class = "btn-bought" data-tooltip="Відмітити як куплене">Куплено</button>
+                <button data-tooltip="Видалити товар" class="delete">x</button>
+            </div>
+        </div>
+        <div class="item">
+            <input class = "name" type="text" value="Сир">
+            <div class="controls">
+                <button class = "btn-minus" data-tooltip="Видалити">-</button>
+                <span class="quantity">1</span>
+                <button class = "btn-plus" data-tooltip="Додати">+</button>
+            </div>
+            <div class="controls">
+                <button class = "btn-bought" data-tooltip="Відмітити як куплене">Куплено</button>
+                <button data-tooltip="Видалити товар" class="delete">x</button>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+      <h2>Залишилося</h2>
+      <div class="badge-item">Печиво <span class="badge-count">2</span></div>
+      <div class="badge-item">Сир <span class="badge-count">1</span></div>
+      <h2>Куплено</h2>
+      <div class="badge-item"><s>Помідори</s><span class="badge-count"><s>2</s></span></div>
+    </div>
+  </div>
+
+  <div class="badge">BuyList</div>
+</body>
+</html>
