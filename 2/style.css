@@ -60,7 +60,7 @@ body {
     border-color: #0062cc;
   }
   
-  @media (max-width: 650px) {
+  @media (max-width: 870px) {
     .container {
       flex-direction: column;
     }
