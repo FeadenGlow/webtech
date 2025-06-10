@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Кошик покупок</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="add">
+        <input id="new-item" type="text" class="add-products" placeholder="Назва товару" data-tooltip="Введіть назву товару">
+        <button id="add-btn" class="btn-add" data-tooltip="Додати товар">Додати</button>
+      </div>
+      <div id="items"></div>
+    </div>
+    <div class="right">
+      <h2>Залишилося</h2>
+      <div id="remaining"></div>
+      <h2>Куплено</h2>
+      <div id="bought"></div>
+    </div>
+  </div>
+  <div class="badge">BuyList</div>
+
+  <script src = "script.js">
+  </script>
+</body>
+</html>

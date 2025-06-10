@@ -69,7 +69,7 @@ body {
   .item {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 20px;   
     border-top: 1px solid #ccc; 
   }
@@ -79,6 +79,9 @@ body {
     margin-bottom: 5px;
   }
   .name{
+    white-space: normal;
+    word-wrap: break-word; 
+    overflow-wrap: anywhere;
     width: 80px;
   }
   .controls {
@@ -208,7 +211,7 @@ body {
     padding: 10px 17px;
     font-size: 15px;
     font-weight: 700;
-    margin: 5px 0;
+    margin: 5px;
     color: rgb(119, 119, 119);
     display: inline-block;
   }
